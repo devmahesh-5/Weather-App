@@ -10,7 +10,7 @@ async function getWeather() {
     const city = document.querySelector("#cityInput").value;
    try{
 
-    const resLocation= await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=872bb1e9a49c3dab9e9f4756a7a89587`);
+    const resLocation= await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=872bb1e9a49c3dab9e9f4756a7a89587`);
     const data1=await resLocation.json();
     const latitude=data1[0]['lat'];
     const longitude=data1[0]['lon'];
